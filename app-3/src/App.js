@@ -1,3 +1,5 @@
+//what is axios?? 
+
 import React, { Component } from 'react';
 import './App.css';
 
@@ -11,6 +13,7 @@ class App extends Component {
     }
   }
 
+  //what is the argument filter? why isn't it the event? and is returning filterString, so isn't this kind of an infinite loop? the are each other but they return each other....?
   handleChange(filter){
     this.setState({filterString: filter})
   }
