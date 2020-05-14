@@ -45,5 +45,3 @@ class Login extends Component {
 export default Login;
 
 //what is the type stuff going on the inputs? type='text'??
-
-//how would you get the boxes to say "username" and "password" respectively? 
