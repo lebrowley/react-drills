@@ -7,6 +7,7 @@ class Image extends Component{
                 <img
                 height= "600"
                 width= "750" 
+                //is this how you would properly size an image in react or would you use a css file to do it? 
                 src={this.props.url}
                 alt="green space" />
             </div>
