@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import NewTask from './NewTask';
 import List from './List';
-import ToDo from './Todo';
 
 class App extends Component {
   constructor(){
@@ -14,7 +13,7 @@ class App extends Component {
     this.handleAddTask = this.handleAddTask.bind(this)
   }
 
-  handleAddTask(){
+  handleAddTask(task){
     this.setState({list: [...this.state.list, task] })
   }
 
