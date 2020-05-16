@@ -15,4 +15,5 @@ class App extends Component{
 export default App;
 
 
-//so the <div>Login</div> is a placeholder of sorts that is bringing in all the information that we wrote up in our Login.js? This file App.js is the parent that is using props (the onChange={the functions} bits on the input and button in Login.js) to bring in this info and functionality from its child Login.js?? 
+//Login here is like a stepping stone so we can step down into the level of Login, the child of this component
+//App is the parent, Login is the child

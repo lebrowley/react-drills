@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Image from './Image';
 import Login from './Login';
-import Text from './Text';
 
 class App extends Component{
   render(){
@@ -12,15 +11,17 @@ class App extends Component{
 
       <Login/>
 
-      <Text/>
+      <h3>Garden Go!</h3>
     </div>
-    )
-//just a note: i was messing around with how the page looked and added a login and some text just for fun    
+    )    
   }
 }
 
 export default App;
 
-//when should we put a className on something and when shouldn't we? 
 
-//so this is the parent because it is importing Image. Image is it's child because it is giving App information via a prop
+
+// className’s are pretty strictly used for styling. Whatever value you give your className is what you need to use in your css files.
+
+//this is the parent component for Login and so that is why the url goes here. the parent passes this information down to the child (Image) so it can do stuff with it
+

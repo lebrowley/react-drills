@@ -51,12 +51,13 @@ class App extends Component {
         <Image url="https://static1.squarespace.com/static/52e1b262e4b06ef060506756/57bc22d9725e25f9d008b59f/5d7a80ff32891970bb9bb4db/1588005635063/Hero.jpg?format=1500w"/>
         
       </div>
-      //i was just messing around with adding in more components so that's why there's the image
     )
   }
 }
 
 export default App;
+
+
 
 //responsible for: 
 //getting new tasks

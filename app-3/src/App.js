@@ -7,11 +7,10 @@ class App extends Component {
 
     this.state = {
       words: ['alligator', 'butterfly', 'caterpillar', 'dandelion', 'elephant', 'fox', 'gorilla', 'hollyhock', 'iguana', 'juniper', 'kangaroo'],
-      filteredWords: ''
+      filterString: ''
     }
   }
 
-  //what is the argument filter? why isn't it the event? and is returning filterString, so isn't this kind of an infinite loop? the are each other but they return each other....?
   handleChange(filter){
     this.setState({filterString: filter})
   }
@@ -33,9 +32,17 @@ class App extends Component {
 
 export default App;
 
+
+
 //when to know to put things in the render method vs making a whole new custom method on the object
 //as in where is the best place to solve the "toy problem" bit? in the render? in a custom method....?
-//can jsx only go in the render method?? could a custom method have jsx too? or is it best practice to put jsx stuff in the render to keep things organized and good flow? 
 //and then knowing what to put in the return vs the render....
+
+// Any complex functionality you will want to put in a custom method. Then you should just reference that custom method in the render for whatever onClick event that needs to trigger that more complex functionality.
+ 
+// The event generated is passed to the callback function.
+
+// In the case of () => this.handleChange() the arrow function is the callback function and this.handleChange() is a second separate function that is being returned by the anonymous arrow function.
+
 
 //what is the key={index} on the h2 doing??

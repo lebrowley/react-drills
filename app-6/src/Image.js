@@ -15,3 +15,5 @@ class Image extends Component{
 }
 
 export default Image;
+
+//responsible for displaying an image and receiving a prop from App with the image url on it

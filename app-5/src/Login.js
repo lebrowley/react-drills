@@ -10,7 +10,6 @@ class Login extends Component {
         };
 
         this.handleLogin = this.handleLogin.bind(this)
-        //why do we only have to bind this one? what about the other methods handleUsernameChange and handlePasswordChange? 
     }
 
     handleUsernameChange(name){

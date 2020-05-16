@@ -10,7 +10,7 @@ class Login extends Component {
         };
 
         this.handleLogin = this.handleLogin.bind(this)
-        //why do we only have to bind this one? what about the other methods handleUsernameChange and handlePasswordChange? 
+        //why do we only have to bind this one? what about the other methods handleUsernameChange and handlePasswordChange?>> because it is the only one that uses the this keyword in its return so it needs to have context established 
     }
 
     handleUsernameChange(name){
@@ -31,10 +31,12 @@ class Login extends Component {
                 <input
                 onChange={ (e) => this.handleUsernameChange(e.target.value) }
                 type='text'
+                placeholder='username'
                 />
                 <input
                 onChange={ (e) => this.handlePasswordChange(e.target.value) } 
                 type='text'
+                placeholder='password'
                 />
                 <button onClick={this.handleLogin}>Login</button>
             </div>
@@ -44,4 +46,5 @@ class Login extends Component {
 
 export default Login;
 
-//what is the type stuff going on the inputs? type='text'??
+//what is the type stuff going on the inputs? type='text'??>> it is telling what kind of input can go in the input line
+//in  this case, only letters can be typed in
